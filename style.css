@@ -1,0 +1,54 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+.form-container {
+    margin: 20px;
+}
+
+input, select {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 80%;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+.edit {
+    background-color: green;
+    color: white;
+}
+
+.delete {
+    background-color: red;
+    color: white;
+}

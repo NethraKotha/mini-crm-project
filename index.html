@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini CRM System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Mini CRM System</h1>
+
+<div class="form-container">
+    <input type="text" id="name" placeholder="Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="text" id="phone" placeholder="Phone">
+
+    <!-- NEW FIELD -->
+    <select id="status">
+        <option>Lead</option>
+        <option>Contacted</option>
+        <option>Converted</option>
+    </select>
+
+    <button onclick="addCustomer()">Save Customer</button>
+</div>
+
+<input type="text" id="search" placeholder="Search customers..." onkeyup="searchCustomer()">
+
+<h3>Total Customers: <span id="count">0</span></h3>
+
+<table>
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Status</th> <!-- NEW -->
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody id="customerList"></tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
